@@ -1,0 +1,7 @@
+myexe12: p12.o fun12.o
+	g++ -o myexe12 p12.cpp fun12.cpp
+p12.o: p12.cpp head12.h
+	g++ -c p12.cpp
+fun12.o: fun12.cpp head12.h
+	g++ -c fun12.cpp
+

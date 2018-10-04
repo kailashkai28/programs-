@@ -1,0 +1,6 @@
+myexe15: p15.o fun15.o
+	g++ -o myexe15 p15.cpp fun15.cpp
+p15.o: p15.cpp head15.h
+	g++ -c p15.cpp
+fun15.o: fun15.cpp head15.h
+	g++ -c fun15.cpp

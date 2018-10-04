@@ -1,0 +1,7 @@
+myexe14: main14.o rational.o
+	g++ -o myexe14 main14.cpp rational.cpp
+main14.o: main14.cpp head14.h
+	g++ -c main14.cpp
+rational.o: rational.cpp head14.h
+	g++ -c rational.cpp
+

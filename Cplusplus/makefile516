@@ -1,0 +1,6 @@
+myexe: main516.o p61a.o
+	g++ -o myexe main516.cpp p61a.cpp
+main516.o: main516.cpp head516.h
+	g++ -c main516.cpp -I
+p61a.o: p61a.cpp head516.h
+	g++ -c p61a.cpp -I

@@ -1,0 +1,7 @@
+myexe2: p621.o fun62.o
+	g++ -o myexe2 p621.cpp fun62.cpp
+p621.o: p621.cpp head62.h
+	g++ -c p621.cpp
+fun62.o: fun62.cpp head62.cpp
+	g++ -c fun62.cpp
+

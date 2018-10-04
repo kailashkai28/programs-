@@ -1,0 +1,6 @@
+myexe74: p74.o fun74.o
+	g++ -o myexe74 p74.cpp fun74.cpp
+p74.o: p74.cpp head74.h
+	g++ -c p74.cpp 
+fun74.o: fun74.cpp head74.h
+	g++ -c fun74.cpp

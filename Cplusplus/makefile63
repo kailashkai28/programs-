@@ -1,0 +1,6 @@
+myexe3: p63.o fun63.o
+	g++ -o myexe3 p63.cpp fun63.cpp
+p63.o: p63.cpp head63.h
+	g++ -c p63.cpp
+fun63.o: fun63.cpp head63.h
+	g++ -c fun63.cpp
